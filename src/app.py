@@ -265,7 +265,7 @@ def admin():
             writer.writerow(row)
         response = make_response("\ufeff" + output.getvalue())
         response.headers["Content-Type"] = "text/csv; charset=utf-8"
-        response.headers["Content-Disposition"] = "attachment; filename=sportcenter-bookings.csv"
+        response.headers["Content-Disposition"] = "attachment; filename=tempo-bookings.csv"
         return response
     stats = {"users": conn.execute("SELECT COUNT(*) FROM users WHERE role='client'").fetchone()[0],
              "classes": conn.execute("SELECT COUNT(*) FROM classes WHERE starts_at>=?", (datetime.now().isoformat(timespec="minutes"),)).fetchone()[0],

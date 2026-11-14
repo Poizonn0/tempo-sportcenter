@@ -1,5 +1,5 @@
 (() => {
-  const storageKey = "sportcenter-theme";
+  const storageKey = "tempo-theme";
   let theme = "light";
 
   try {
