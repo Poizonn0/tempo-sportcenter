@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tempo",
+  "main": "src/worker.py",
+  "compatibility_date": "2026-11-14",
+  "compatibility_flags": ["python_workers"],
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public/",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tempo-sportcenter-db",
+      "database_id": "f357d8ac-634e-4b48-b530-9e61c05572d8",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

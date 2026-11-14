@@ -1,0 +1,12 @@
+.venv/
+.venv-workers/
+__pycache__/
+instance/
+.env
+*.log
+public/
+src/worker_templates.py
+python_modules/
+.wrangler/
+tools/node-portable/
+tools/cloudflared.exe

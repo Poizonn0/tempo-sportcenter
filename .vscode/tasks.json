@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SportCenter: запуск сайта",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\run.ps1"],
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "SportCenter: Cloudflare Quick Tunnel",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\tunnel.ps1"],
+      "problemMatcher": []
+    }
+  ]
+}
